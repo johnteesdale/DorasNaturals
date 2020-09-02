@@ -1,0 +1,463 @@
+/* general css */
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #0D044D;
+  letter-spacing: 3px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #59ADD3;
+}
+
+img {
+  width: 100%;
+}
+
+.yellow {
+  color: #FFFFFF;
+  background-color: #E1A425;
+}
+
+.darkBlue {
+  color: #FFFFFF;
+  background-color: #0D044D;
+}
+
+.lightBlue {
+  color: #FFFFFF;
+  background-color: #59ADD3;
+}
+
+.whiteText {
+  color: #FFFFFF;
+}
+
+p {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+p.small {
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h6 {
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h5.iconText {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+div.heroImage {
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+}
+
+div.twoColumn {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-column-gap: 30px;
+}
+
+div.threeColumn {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  grid-column-gap: 30px;
+}
+
+div.heroImageSideText {
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+
+div.heroImageSideText div:nth-of-type(2) {
+  padding-top: 350px;
+  text-align: center;
+}
+
+div.heroImageSideText div:nth-of-type(2) h1 {
+  align-content: center;
+}
+
+img.icon {
+  max-width: 150px;
+  margin: auto;
+  display: block;
+}
+
+div.bottleTypes {
+  padding: 50px;
+  margin: 100px auto;
+}
+
+div.bottleTypes img {
+  width: 100%;
+}
+
+div.bottleTypes h2 {
+  text-align: center;
+  margin-bottom: 10px !important;
+}
+
+div.bottleTypes h3 {
+  max-width: none !important;
+  text-align: center;
+  font-weight: 300;
+  margin: 0px auto 40px !important;
+}
+
+div.bottleTypes h4 {
+  text-align: center;
+}
+
+div.bottleTypes h4.light {
+  font-weight: 300;
+}
+
+div.bottleTypes .threeColumn {
+  margin-bottom: 50px;
+}
+
+.yellowShadow {
+  box-shadow: 15px -15px #E1A425;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+/* Header style */
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    padding: 25px 80px;
+}
+
+#homepage header {
+  background-color: rgba(0,0,0,0);
+}
+
+header li {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+header > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#headerLogo {
+  width: 100px;
+  margin: 0px 80px 0px 0px;
+}
+
+
+/* Homepage Styling */
+
+#homepage div.heroImage {
+  background-image: url(src/images/21EmpireBlvd.jpg);
+  background-position: bottom;
+}
+
+#homepage div.heroImage div {
+  width: 400px;
+  margin: auto;
+  vertical-align: middle;
+  padding: 200px 0px 50px;
+}
+
+#homepage div.heroImage div img {
+  width: 100%;
+}
+
+#homepage div.heroImage h2 {
+  text-align: center;
+  width: 100%;
+  vertical-align: bottom;
+}
+
+#homePageContent {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  padding: 100px 0px 150px;
+}
+
+#homePageContent .threeColumn div {
+  padding: 30px 30px 0px 30px;
+}
+
+#homePageContent .threeColumn div img {
+  width: 100%;
+  margin: 0px 0px 20px;
+}
+
+#homePageContent .threeColumn div h2 {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+#homePageContent h2 {
+  margin: 0px 0px 40px;
+}
+
+/* High Pressure Processing */
+
+#highPressure .heroImage {
+  background-image: url(src/images/IMG_9745-large@2x.png);
+}
+
+#highPressureContent, #coldPressedContent {
+  padding: 100px;
+}
+
+#highPressureContent h3 {
+  text-align: center;
+  max-width: 350px;
+  margin: auto;
+}
+
+#highPressureContent h5 {
+  text-align: center;
+  max-width: 350px;
+  margin: 20px auto;
+}
+
+#highPressureContent .threeColumn {
+  margin: 50px 0px 1h50px;
+  grid-column-gap: 50px;
+}
+
+#highPressureContent h2 {
+  margin-bottom: 20px;
+}
+
+#highPressureContent .threeColumn h2 {
+  text-align: center;
+}
+
+#highPressureContent .threeColumn div.lightBlue {
+  padding: 30px;
+}
+
+#highPressureContent .threeColumn div.lightBlue img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Cold-Pressed Beverage Copacking */
+
+#coldPressedBeverage div.content div.heroImage {
+  background-image: url(src/images/iStock-JuicePlant932389430e@2x.png);
+}
+
+#coldPressedBeverage div.heroImageSideText div:nth-of-type(2) {
+  padding-top: 300px;
+  text-align: center;
+}
+
+#coldPressedBeverage ul {
+  padding: 0px 20px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+#coldPressedBeverage h3 {
+  margin: 20px 0px;
+}
+
+#coldPressedBeverage div.twoColumn {
+  margin: 0px auto 200px;
+  align-content: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+#coldPressedBeverage div.twoColumn:not(:first-of-type) div img {
+  max-width: 300px;
+  margin: auto;
+  display: block;
+}
+
+/* Direct to Consumer Fulfillment */
+
+#directToConsumerFulfillment .heroImage {
+  background-image: url(src/images/shutterstock_DelivGuy289466309.jpg);
+  background-position: top;
+}
+
+#directToConsumerContent h3{
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+}
+
+#directToConsumerContent div.fullWidth {
+  background-image: url(src/images/shutterstockFedexTruck_2962929D98.jpg);
+  padding: 20px;
+  margin: 100px auto;
+  background-size: cover;
+}
+
+#directToConsumerContent div.fullWidth h3 {
+  margin: 100px auto;
+  padding: 100px;
+  background-color: rgba(89, 173, 211, .8);
+  color: #FFFFFF;
+}
+
+#directToConsumerContent iframe {
+  width: 100%;
+}
+
+#directToConsumerContent .twoColumn {
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 100px;
+  padding: 0px 100px;
+  margin: 150px auto;
+}
+
+#directToConsumerContent .twoColumn div h3 {
+  text-align: left;
+}
+
+/* Contact Form */
+
+.contactForm {
+  text-align: center;
+  padding: 50px;
+}
+
+.contactForm form input {
+  margin: 20px 0px;
+}
+
+.contactForm form .typeInput {
+  background-color: #59ADD3;
+  color: #0D044D;
+  border: none;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 40%;
+  margin: 10px auto;
+}
+
+.contactForm form .typeInput::placeholder {
+  color: #0D044D
+}
+
+.contactForm form h3 {
+  margin: 40px auto 10px !important;
+  font-weight: 300;
+}
+
+.contactForm form div.radioButton {
+  max-width: 30%;
+  text-align: left;
+  display: inline-block;
+  margin: 0px 30px;
+  vertical-align: top;
+}
+
+.contactform button {
+  background-color: #59ADD3;
+  color: #0D044D;
+  border-radius: 100px;
+  padding: 20px 80px;
+  border: none;
+  margin: 50px auto 20px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.contactForm button:hover {
+  padding: 20px 120px;
+}
+
+/* Footer */
+
+footer {
+  padding: 50px 100px;
+}
+
+footer > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+footer div h2 {
+  margin-right: 200px;
+}
+
+footer div h5 {
+  font-size: 15px;
+}
+
+footer a:hover {
+  color: #0D044D;
+}
+
+footer div:nth-of-type(2) {
+  margin: auto;
+  max-width: 800px;
+}

@@ -1,0 +1,18 @@
+General Info
+
+Colors:
+Light Blue: #59ADD3
+Dark Blue/Text Color: #0D044D
+Grey: #707070
+Yellow: #E1A425
+White: #FFFFFF
+BlueGreen Highlight: #2EDEB3
+
+Text:
+p: Montserrat Light 40px
+h1: Montserrat bold 50px uppercase
+h2: Montserrat Bold 40px uppercase
+h3: Montserrat Bold 30px uppercase
+h4: Montserrat Bold 20px uppercase
+h5: Montserrat Medium 25px
+h6: Montserrat Bold 70px uppercase
