@@ -244,6 +244,7 @@ header > * {
 
 #homepage div.heroImage {
   background-image: url(src/images/21EmpireBlvd.jpg);
+  background-position: bottom;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -391,6 +392,9 @@ header > * {
   background-image: url(src/images/shutterstockFedexTruck_2962929D98.jpg);
   padding: 20px;
   margin: 100px auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -457,7 +461,7 @@ header > * {
   vertical-align: top;
 }
 
-.contactform button {
+.contactform .button {
   background-color: #59ADD3;
   color: #0D044D;
   border-radius: 100px;
@@ -469,9 +473,10 @@ header > * {
   text-transform: uppercase;
   cursor: pointer;
   transition: .2s;
+  display: block;
 }
 
-.contactForm button:hover {
+.contactForm .button:hover {
   padding: 20px 120px;
 }
 

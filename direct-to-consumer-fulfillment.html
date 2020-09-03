@@ -7,7 +7,7 @@ html>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="animation.css">
-  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="script.js"></script>
 </head>
 
@@ -46,7 +46,7 @@ html>
 
     <div class="darkBlue contactForm">
       <h2>Contact</h2>
-      <form>
+      <form method="post" action="contactForm.php">
         <input class="typeInput" type="text" id="name" name="name" placeholder="Name">
         <input class="typeInput" type="email" id="email" name="email" placeholder="Email">
         <input class="typeInput" type="text" id="company" name="company" placeholder="Company">
@@ -55,8 +55,8 @@ html>
         <div class="radioButton"><input type="radio" id="hpp" name="interest"> <label>HPP</label></div>
         <div class="radioButton"><input type="radio" id="coldPressed" name="interest"> <label>COLD-PRESSED BEVERAGE COPACKING</label></div>
         <div class="radioButton"><input type="radio" id="directToConsumer" name="interest"> <label>DIRECT TO CONSUMER FULFILLMENT</label></div>
+        <input type="submit" class="button" value="Submit">
       </form>
-      <button onclick="">Submit</button>
     </div>
 
    <footer class="lightBlue">
