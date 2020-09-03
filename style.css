@@ -182,6 +182,7 @@ header {
     position: fixed;
     top: 0px;
     padding: 25px 80px;
+    z-index: 1000;
 }
 
 #homepage header {
@@ -203,7 +204,39 @@ header > * {
 
 #headerLogo {
   width: 100px;
-  margin: 0px 80px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+@media only screen and (max-width: 1270px){
+  header li {
+    max-width: 200px;
+    vertical-align: top;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  header ul {
+    display: none;
+  }
+
+  header .hamburger {
+    width: 50px;
+    display: block;
+    float: right;
+    margin: 10px 150px 0px 0px;
+    cursor: pointer;
+  }
+
+  header .hamburger div {
+    height: 5px;
+    width: 100%;
+    background-color: #FFFFFF;
+    margin: 10px auto;
+  }
+
+  header .hamburger:hover div {
+    background-color: #59ADD3;
+  }
 }
 
 
@@ -211,7 +244,10 @@ header > * {
 
 #homepage div.heroImage {
   background-image: url(src/images/21EmpireBlvd.jpg);
-  background-position: bottom;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #homepage div.heroImage div {
@@ -285,6 +321,11 @@ header > * {
 
 #highPressureContent h2 {
   margin-bottom: 20px;
+  font-size: 30px;
+}
+
+#highPressureContent p {
+  font-size: 30px;
 }
 
 #highPressureContent .threeColumn h2 {
@@ -460,4 +501,10 @@ footer a:hover {
 footer div:nth-of-type(2) {
   margin: auto;
   max-width: 800px;
+}
+
+/* animation */
+
+.icon, #meat, #dips, #beverages, #sourcingHelpTitle {
+  visibility: hidden;
 }

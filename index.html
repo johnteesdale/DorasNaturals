@@ -6,10 +6,24 @@
   <link rel="icon" href="src/images/doras-naturals-logo-sm.png" type="image">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animation.css">
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script src="script.js"></script>
 </head>
 
 <body id="homepage">
+  <script>
+    $(window).scroll(function() {
+      $('#none').each(function(){
+      var imagePos = $(this).offset().top;
+
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+600) {
+          $(this).addClass("slideUp");
+        }
+      });
+    });
+  </script>
   <header class="darkBlue">
     <a href="index.html"><img id="headerLogo" src="src/images/doras-naturals-logo-sm.png"></a>
     <ul>
@@ -21,10 +35,10 @@
 
   <div class="content">
     <div class="heroImage">
-      <div>
-        <img src="src/images/doras-naturals-logo.png">
+      <div class="slideUp">
+        <img class="tossing" src="src/images/doras-naturals-logo.png">
       </div>
-      <h2 class="whiteText">A LEADING NATURAL FOOD<br>AND BEVERAGE COMPANY</h2>
+      <h2 class="whiteText slideUp">A LEADING NATURAL FOOD<br>AND BEVERAGE COMPANY</h2>
     </div>
     <div id="homePageContent">
       <h2>PROCESSING SERVICES ALL UNDER ONE ROOF</h2>
