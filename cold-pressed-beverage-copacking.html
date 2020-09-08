@@ -12,6 +12,50 @@
 </head>
 
 <body id="coldPressedBeverage">
+
+  <script>
+    $(window).scroll(function() {
+      $('#buildingImage').each(function(){
+      var imagePos = $(this).offset().top;
+
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+600) {
+          $(this).addClass("expandUp");
+        }
+      });
+    });
+    $(window).scroll(function() {
+      $('#bottles1').each(function(){
+      var imagePos = $(this).offset().top;
+
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+600) {
+          $(this).addClass("expandUp");
+        }
+      });
+    });
+    $(window).scroll(function() {
+      $('#bottles2').each(function(){
+      var imagePos = $(this).offset().top;
+
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+600) {
+          $(this).addClass("expandUp");
+        }
+      });
+    });
+    $(window).scroll(function() {
+  		$('#sourcingHelpTitle').each(function(){
+  		var imagePos = $(this).offset().top;
+
+  		var topOfWindow = $(window).scrollTop();
+  			if (imagePos < topOfWindow+600) {
+  				$(this).addClass("slideRight");
+  			}
+  		});
+  	});
+  </script>
+
   <header class="darkBlue">
     <a href="index.html"><img id="headerLogo" src="src/images/doras-naturals-logo-sm.png"></a>
     <ul>
@@ -26,7 +70,7 @@
       <div class="heroImage">
       </div>
       <div class="lightBlue">
-        <h1> LOOKING FOR THE PERFECT CO-PACKER WITH STATE OF THE ART EQUIPMENT?</h1>
+        <h1 class="slideLeft"> LOOKING FOR THE PERFECT CO-PACKER WITH STATE OF THE ART EQUIPMENT?</h1>
       </div>
      </div>
     <div id="coldPressedContent">
@@ -41,7 +85,7 @@
           <h3 class="medium">ALL UNDER ONE ROOF</h3>
         </div>
         <div>
-          <img class="yellowShadow" src="src/images/HPP-KNICKER@2x.png">
+          <img id="buildingImage" class="yellowShadow" src="src/images/HPP-KNICKER@2x.png">
         </div>
       </div>
       <div class="twoColumn">
@@ -56,12 +100,12 @@
           </ul>
         </div>
         <div>
-          <img src="src/images/shutterstockjuiceshots_57352924@2x.png">
+          <img id="bottles1" src="src/images/shutterstockjuiceshots_57352924@2x.png">
         </div>
       </div>
       <div class="twoColumn">
         <div>
-          <img src="src/images/SAPonTAPGroup@2x.png">
+          <img id="bottles2" src="src/images/SAPonTAPGroup@2x.png">
         </div>
         <div>
           <h3>DORA’S NATURALS <span class="medium">IS CAPABLE OF</span></h3>
@@ -74,19 +118,19 @@
         </div>
       </div>
       <div class="yellow bottleTypes">
-        <h2>NEED HELP WITH SOURCING?</h2>
+        <h2 id="sourcingHelpTitle">NEED HELP WITH SOURCING?</h2>
         <h3>LET OUR CUSTOMER SERVICE TEAM HELP!</h3>
         <div class="threeColumn">
           <div>
-            <img src="src/images/SAPonTAPGroup@2x.png">
+            <img class="floating1" src="src/images/SAPonTAPGroup@2x.png">
             <h5>(Available in 8oz, 12oz, 16oz)</h5>
           </div>
           <div>
-            <img src="src/images/hutterstock4bottle1199757787-huge@2x.png">
+            <img class="floating2" src="src/images/hutterstock4bottle1199757787-huge@2x.png">
             <h5>(Available in 8oz, 10oz, 12oz, 16oz)</h5>
           </div>
           <div>
-            <img src="src/images/shutterstockjuiceshots_57352924@2x.png">
+            <img class="floating3" src="src/images/shutterstockjuiceshots_57352924@2x.png">
             <h5>(Available in 2.5oz, 4oz)</h5>
           </div>
         </div>

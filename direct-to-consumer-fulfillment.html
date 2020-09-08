@@ -12,6 +12,30 @@ html>
 </head>
 
 <body id="directToConsumerFulfillment">
+
+  <script>
+    $(window).scroll(function() {
+      $('#locationText').each(function(){
+      var imagePos = $(this).offset().top;
+
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+600) {
+          $(this).addClass("slideRight");
+        }
+      });
+    });
+    $(window).scroll(function() {
+      $('#firstText').each(function(){
+      var imagePos = $(this).offset().top;
+
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+600) {
+          $(this).addClass("fadeIn");
+        }
+      });
+    });
+  </script>
+
   <header class="darkBlue">
     <a href="index.html"><img id="headerLogo" src="src/images/doras-naturals-logo-sm.png"></a>
     <ul>
@@ -26,17 +50,17 @@ html>
       <div class="heroImage">
       </div>
       <div class="lightBlue">
-        <h1>DIRECT TO CONSUMER FULFILLMENT</h1>
+        <h1 class="slideLeft">DIRECT TO CONSUMER FULFILLMENT</h1>
       </div>
      </div>
     <div id="directToConsumerContent">
-      <h3 style="margin: 150px auto;">AT DORA’S NATURALS <span class="medium">WE UNDERSTAND THAT PRODUCTION IS ONLY THE FIRST STEP OF MANY STEPS IN OBTAINING A SALE WHICH IS WHY DORA’S NATURALS TAKES IT A STEP FURTHER.</span></h3>
+      <h3 id="firstText" style="margin: 150px auto;">AT DORA’S NATURALS <span class="medium">WE UNDERSTAND THAT PRODUCTION IS ONLY THE FIRST STEP OF MANY STEPS IN OBTAINING A SALE WHICH IS WHY DORA’S NATURALS TAKES IT A STEP FURTHER.</span></h3>
       <div class="fullWidth">
         <h3><span class="medium">IN ADDITION TO LOGISTIC SERVICES TO RETAILERS AND DISTRIBUTORS WE NOW OFFER</span> DIRECT TO CONSUMER FULFILLMENT.</h3>
       </div>
       <div class="twoColumn">
         <div style="display:flex;">
-          <h3 class="medium">OUR LOCATION IS JUST 9 MILES FROM NEW YORK CITY AT THE CROSS ROADS OF THE TURNPIKE AND ROUTE 80 WHICH ENABLES US TO DELIVER NEXT DAY TO THE LARGEST METROPOLITAN AREA IN THE COUNTRY.</h3>
+          <h3 id="locationText" class="medium">OUR LOCATION IS JUST 9 MILES FROM NEW YORK CITY AT THE CROSS ROADS OF THE TURNPIKE AND ROUTE 80 WHICH ENABLES US TO DELIVER NEXT DAY TO THE LARGEST METROPOLITAN AREA IN THE COUNTRY.</h3>
         </div>
         <div>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.8483868709827!2d-74.04707258458726!3d40.8312937382458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f83acaaaeeab%3A0x63f76998651a0e4!2sDora&#39;s%20Natural!5e0!3m2!1sen!2sus!4v1599025785696!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>

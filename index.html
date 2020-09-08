@@ -12,18 +12,31 @@
 </head>
 
 <body id="homepage">
-  <script>
-    $(window).scroll(function() {
-      $('#none').each(function(){
-      var imagePos = $(this).offset().top;
 
-      var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+600) {
-          $(this).addClass("slideUp");
-        }
+  <script>
+
+    function spinDelay1() {
+      $("#homepageLink2").addClass("spin");
+    }
+
+    function spinDelay2() {
+      $("#homepageLink3").addClass("spin");
+    }
+
+      $(window).scroll(function() {
+        $('#homepageLink1').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+          if (imagePos < topOfWindow+600) {
+            $(this).addClass("spin");
+            setTimeout(spinDelay1, 200);
+            setTimeout(spinDelay2, 400);
+          }
+        });
       });
-    });
-  </script>
+    </script>
+
   <header class="darkBlue">
     <a href="index.html"><img id="headerLogo" src="src/images/doras-naturals-logo-sm.png"></a>
     <ul>
@@ -43,15 +56,15 @@
     <div id="homePageContent">
       <h2>PROCESSING SERVICES ALL UNDER ONE ROOF</h2>
       <div class="threeColumn">
-        <div class="yellow">
+        <div id="homepageLink1" class="yellow">
           <img src="src/images/IMG_9745@2x.png">
           <h2>HIGH PRESSURE PROCESSING</h2>
         </div>
-        <div class="yellow">
+        <div id="homepageLink2" class="yellow">
           <img src="src/images/iStock-JuicePlant 932389430@2x.png">
           <h2>COLD PRESSED BEVERAGE CO-PACKING</h2>
         </div>
-        <div class="yellow">
+        <div id="homepageLink3" class="yellow">
           <img src="src/images/shutterstock_DelivGuy289466309@2x.png">
           <h2>DIRECT TO CONSUMER FULFILLMENT</h2>
         </div>
