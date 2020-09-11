@@ -53,9 +53,10 @@ p.small {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
+  padding: 0px 15px;
 }
 
 h2 {
@@ -228,7 +229,7 @@ header > * {
     width: 50px;
     display: block;
     float: right;
-    margin: 10px 150px 0px 0px;
+    margin: 10px 80px 0px 0px;
     cursor: pointer;
   }
 
@@ -244,6 +245,25 @@ header > * {
   }
 }
 
+#hamburgerMenu {
+  background-color: #0D044D;
+  height: 100%;
+  width: 100%;
+  display: none;
+  color: white;
+  position: fixed;
+}
+
+#hamburgerMenu ul {
+  text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 80px auto;
+}
+
+#hamburgerMenu ul li {
+  margin: 25px auto;
+}
 
 /* Homepage Styling */
 
@@ -433,7 +453,7 @@ header > * {
 }
 
 .contactForm form input {
-  margin: 20px 0px;
+  margin: 8px 0px;
 }
 
 .contactForm form .typeInput {
@@ -517,4 +537,90 @@ footer div:nth-of-type(2) {
 
 .icon, #firstText, #locationText, #meat, #dips, #beverages, #sourcingHelpTitle, #homepageLink1, #homepageLink2, #homepageLink3, #buildingImage, #bottles1, #bottles1 {
   visibility: hidden;
+}
+
+/* mobile */
+
+@media only screen and (max-width: 900px){
+
+  header {
+    padding: 20px 40px;
+  }
+
+  div.threeColumn {
+    grid-template-columns: 1fr;
+  }
+
+  .threeColumn div {
+    width: 80%;
+    margin: 30px auto;
+  }
+
+  div.heroImageSideText {
+    grid-template-columns: 1fr;
+  }
+
+  div.heroImageSideText div.heroImage {
+    height: 500px;
+  }
+
+  div.heroImageSideText div:nth-of-type(2) {
+    padding: 30px 15px !important;
+  }
+
+  div.twoColumn {
+    grid-template-columns: 1fr !important;
+  }
+
+  div.twoColumn div{
+    margin: 10px auto !important;
+  }
+
+  #highPressureContent, #coldPressedContent {
+    padding: 15px !important;
+  }
+
+  footer {
+    padding: 15px;
+  }
+
+  footer div h5 {
+    font-size: 10px;
+  }
+
+  footer div h2 {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+
+  .contactForm form .typeInput {
+    width: 100%;
+  }
+
+  .contactForm form div.radioButton {
+    display: block;
+    max-width: 100%;
+    margin: 10px 0px;
+  }
+
+  #highPressureContent .twoColumn div h2, #highPressureContent .twoColumn div p{
+    font-size: 20px !important;
+  }
+
+  div.bottleTypes {
+    padding: 20px 0px;
+  }
+
+  #directToConsumerContent .twoColumn {
+    padding: 15px;
+  }
+
+  #directToConsumerContent h3 {
+    font-size: 20px;
+  }
+
+  #directToConsumerContent div.fullWidth h3 {
+    padding: 15px;
+  }
+
 }

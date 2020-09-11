@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -8,7 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="animation.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="script.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body id="highPressure">
@@ -143,12 +144,20 @@
       <li><a href="cold-pressed-beverage-copacking.html">Cold-Pressed Beverage Copacking</a></li>
       <li><a href="direct-to-consumer-fulfillment.html">Direct to Consumer Fulfillment</a></li>
     </ul>
-    <div class="hamburger">
+    <div class="hamburger" onclick="hamburger()">
       <div></div>
       <div></div>
       <div></div>
     </div>
   </header>
+
+  <div id="hamburgerMenu" onclick="hamburgerMenu()">
+    <ul>
+      <li><a href="high-pressure-processing.html">High Pressure Processing</a></li>
+      <li><a href="cold-pressed-beverage-copacking.html">Cold-Pressed Beverage Copacking</a></li>
+      <li><a href="direct-to-consumer-fulfillment.html">Direct to Consumer Fulfillment</a></li>
+    </ul>
+  </div>
 
   <div class="content">
     <div class="heroImageSideText">

@@ -10,3 +10,15 @@ function headerFunction() {
               document.querySelector('header').classList.remove('sticky');
           }
 }
+
+function hamburger() {
+  console.log("clickOpen");
+  $("#hamburgerMenu").show();
+  $("header").hide();
+};
+
+function hamburgerMenu() {
+  console.log("clickClose");
+  $("header").show();
+  $("#hamburgerMenu").hide();
+};
