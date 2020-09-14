@@ -301,7 +301,12 @@ header > * {
 }
 
 #homePageContent .threeColumn div {
-  padding: 30px 30px 0px 30px;
+  padding: 30px;
+  cursor: pointer;
+}
+
+#homePageContent .threeColumn div:hover {
+  box-shadow: 5px 5px 10px #9c9c9c;
 }
 
 #homePageContent .threeColumn div img {
@@ -486,7 +491,7 @@ header > * {
   vertical-align: top;
 }
 
-.contactform .button {
+.contactForm .button {
   background-color: #59ADD3;
   color: #0D044D;
   border-radius: 100px;

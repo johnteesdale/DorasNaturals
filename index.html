@@ -29,7 +29,7 @@
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-          if (imagePos < topOfWindow+600) {
+          if (imagePos > topOfWindow+300) {
             $(this).addClass("spin");
             setTimeout(spinDelay1, 200);
             setTimeout(spinDelay2, 400);
@@ -70,18 +70,18 @@
     <div id="homePageContent">
       <h2>PROCESSING SERVICES ALL UNDER ONE ROOF</h2>
       <div class="threeColumn">
-        <div id="homepageLink1" class="yellow">
+        <a href="high-pressure-processing.html"><div id="homepageLink1" class="yellow">
           <img src="src/images/IMG_9745@2x.png">
           <h2>HIGH PRESSURE PROCESSING</h2>
-        </div>
-        <div id="homepageLink2" class="yellow">
+        </div></a>
+        <a href="cold-pressed-beverage-copacking.html"><div id="homepageLink2" class="yellow">
           <img src="src/images/iStock-JuicePlant 932389430@2x.png">
           <h2>COLD PRESSED BEVERAGE CO-PACKING</h2>
-        </div>
-        <div id="homepageLink3" class="yellow">
+        </div></a>
+        <a href="direct-to-consumer-fulfillment.html"><div id="homepageLink3" class="yellow">
           <img src="src/images/shutterstock_DelivGuy289466309@2x.png">
           <h2>DIRECT TO CONSUMER FULFILLMENT</h2>
-        </div>
+        </div></a>
       </div>
   </div>
 
