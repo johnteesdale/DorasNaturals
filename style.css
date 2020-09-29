@@ -181,6 +181,10 @@ div.bottleTypes .threeColumn {
   font-weight: 500;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 /* Header style */
 
 header {
@@ -323,6 +327,11 @@ header > * {
   margin: 0px 0px 40px;
 }
 
+#homePageContent .threeColumn #homepageLink1 {
+  padding-bottom: 0px;
+  height: calc(100% - 30px);
+}
+
 /* High Pressure Processing */
 
 #highPressure .heroImage {
@@ -417,6 +426,17 @@ header > * {
   text-align: center;
   margin: auto;
 }
+
+#directToConsumerContent #services div {
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+#directToConsumerContent #services h3 {
+  text-align: center;
+}
+
+
 
 #directToConsumerContent div.fullWidth {
   background-image: url(src/images/shutterstockFedexTruck_2962929D98.jpg);
