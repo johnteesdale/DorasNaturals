@@ -22,3 +22,17 @@ function hamburgerMenu() {
   $("header").show();
   $("#hamburgerMenu").hide();
 };
+
+function headerChange() {
+  var y = window.scrollY
+  console.log(y);
+  if (y > 10) {
+    $("#homepageHeader").css("background-color", "#0D044D");
+    console.log("scroll");
+  } else {
+    $("#homepageHeader").css("background-color", "rgba(0,0,0,0)");
+    console.log("top");
+  }
+}
+
+setInterval(headerChange, 200);
