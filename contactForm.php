@@ -3,8 +3,30 @@
   $email = $_POST['email'];
   $company = $_POST['company'];
   $phone = $_POST['phone'];
+  $interesthpp = $_POST['hpp']
+  $interesthpp = $_POST['coldPressed']
+  $interestdirectToConsumer = $_POST['directToConsumer']
+  $message = $_POST['message']
 
-  $email_from = "test@test.com";
+  if (isset($_POST['hpp'])) {
+  $interesthpp = "yes";
+  } else {
+    $interesthpp = "";
+  }
+
+  if (isset($_POST['coldPressed'])) {
+  $interestcoldPressed = "yes";
+  } else {
+  $interestcoldPressed = "";
+  }
+
+  if (isset($_POST['directToConsumer'])) {
+  $interestdirectToConsumer = "yes";
+  } else {
+  $interestdirectToConsumer = "";
+  }
+
+  $email_from = "contactForm@dorasnaturals.com";
 
   $email_subject = "Contact Form Submission";
 
@@ -12,8 +34,11 @@
                 "Email: $email.\n"
                 "Company: $compnay.\n"
                 "Phone: $phone.\n";
+                "Interst: $interesthpp $interesthpp $interestdirectToConsumer.\n"
+                "Message: $message./n"
 
-  $to = "jht171297@gmail.com";
+
+  $to = "info@dorasnaturals.com";
 
   $headers = "From: $email_from \r\n";
 
@@ -21,7 +46,7 @@
 
   mail($to,$email_subject,$email_body,$headers);
 
-  header("Location: test");
+  header("Contact Form");
 
 
 ?>
